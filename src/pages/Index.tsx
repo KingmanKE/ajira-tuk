@@ -1,4 +1,3 @@
-
 import { ArrowRight, Users, Calendar, Award, Target, BookOpen, Handshake, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -23,9 +22,20 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Enhanced Hero Section */}
-      <section className="relative bg-gradient-to-r from-kenyan-black via-kenyan-red to-kenyan-green min-h-[90vh] flex items-center justify-center hero-pattern">
-        <div className="absolute inset-0 bg-black/60"></div>
+      {/* Enhanced Hero Section with TUK Building Background */}
+      <section className="relative min-h-[90vh] flex items-center justify-center hero-pattern">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/1469a0a1-e991-4aa5-b8da-f625cd41f585.png')`
+          }}
+        ></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-kenyan-black/80 via-kenyan-red/60 to-kenyan-green/60"></div>
+        {/* Dark Overlay for Better Text Readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <Badge className="mb-6 bg-kenyan-red/20 text-white border-kenyan-red animate-fade-in">
             Est. 2015 | NRCAC Member Institution
