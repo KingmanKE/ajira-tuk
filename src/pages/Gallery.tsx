@@ -147,10 +147,22 @@ const Gallery = () => {
 
   return (
     <Layout>
-      {/* Enhanced Hero Section */}
-      <section className="bg-gradient-to-r from-kenyan-red via-kenyan-black to-kenyan-green text-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+      {/* Enhanced Hero Section with Background Image */}
+      <section className="relative py-24">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/second-hero-image.png')`
+          }}
+        ></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-kenyan-red/80 via-kenyan-black/70 to-kenyan-green/80"></div>
+        {/* Dark Overlay for Better Text Readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
             <Badge className="mb-6 bg-white/20 text-white border-white animate-fade-in">
               Visual Stories of Excellence
             </Badge>
