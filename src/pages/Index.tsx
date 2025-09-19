@@ -38,7 +38,7 @@ const Index = () => {
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <Badge className="mb-6 bg-kenyan-red/20 text-white border-kenyan-red animate-fade-in">
-            Est. 2015 | NRCAC Member Institution
+            Est. 2022 | NRCAC Member Institution
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in">
             Welcome to <span className="text-kenyan-red">TUK AJIRA CLUB</span>
