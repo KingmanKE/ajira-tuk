@@ -86,7 +86,7 @@ const About = () => {
     {
       year: "2016",
       title: "NRCAC Membership",
-      description: "Officially joined the National Resource Center for Academic Clubs, expanding our network and resources."
+      description: "Officially joined the Nairobi Region Campus Ajira Clubs, expanding our network and resources."
     },
     {
       year: "2018",
