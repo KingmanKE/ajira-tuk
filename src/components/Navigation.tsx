@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -49,6 +49,15 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <a
+              href="https://wa.me/254700000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-1 px-3 py-2 bg-kenyan-green text-white rounded-md hover:bg-kenyan-green/80 transition-colors"
+            >
+              <MessageCircle className="h-4 w-4" />
+              <span className="text-sm font-medium">WhatsApp</span>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -82,6 +91,16 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              <a
+                href="https://wa.me/254700000000"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center space-x-2 px-3 py-2 bg-kenyan-green text-white rounded-md hover:bg-kenyan-green/80 transition-colors"
+              >
+                <MessageCircle className="h-4 w-4" />
+                <span className="text-base font-medium">WhatsApp</span>
+              </a>
             </div>
           </div>
         )}

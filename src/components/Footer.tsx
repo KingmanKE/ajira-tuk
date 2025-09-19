@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -48,6 +48,17 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-kenyan-green" />
                 <span className="text-gray-300 text-sm">+254 700 000 000</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MessageCircle className="h-4 w-4 text-kenyan-green" />
+                <a 
+                  href="https://wa.me/254700000000" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 text-sm hover:text-kenyan-green transition-colors"
+                >
+                  WhatsApp Chat
+                </a>
               </div>
             </div>
           </div>
