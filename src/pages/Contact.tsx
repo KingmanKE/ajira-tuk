@@ -20,7 +20,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Direct Phone Lines",
-      primary: "+254 700 123 456",
+      primary: "254725813823",
       secondary: "+254 733 654 321",
       description: "Call us during business hours for immediate assistance, urgent matters, or to schedule meetings with our leadership team."
     },
@@ -169,7 +169,17 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3 mb-4">
-                    <p className="text-lg font-semibold text-kenyan-red">{method.primary}</p>
+                    {method.icon === Mail ? (
+                      <a href={`mailto:${method.primary}`} className="text-lg font-semibold text-kenyan-red hover:text-kenyan-red/80 transition-colors duration-200">
+                        {method.primary}
+                      </a>
+                    ) : method.icon === Phone ? (
+                      <a href={`tel:+${method.primary}`} className="text-lg font-semibold text-kenyan-red hover:text-kenyan-red/80 transition-colors duration-200">
+                        +{method.primary}
+                      </a>
+                    ) : (
+                      <p className="text-lg font-semibold text-kenyan-red">{method.primary}</p>
+                    )}
                     <p className="text-gray-700">{method.secondary}</p>
                   </div>
                   <p className="text-gray-600 leading-relaxed">{method.description}</p>
