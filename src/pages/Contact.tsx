@@ -410,10 +410,10 @@ const Contact = () => {
                       <a>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.805141452189!2d36.8227187749657!3d-1.291258898696469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10df5a23385d%3A0x15238033c2bcdc3b!2sThe%20Technical%20University%20Of%20Kenya!5e0!3m2!1sen!2ske!4v1758291934292!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>" 
-                        target="_blank" 
+                        {/* target="_blank" 
                         rel="noopener noreferrer"
                         <MapPin className="h-4 w-4 mr-2" />
-                        View on Google Maps
+                        View on Google Maps */}
                       </a>
                     </Button>
                   </div>
