@@ -13,7 +13,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Communication",
-      primary: <a href="mailto:ajiratuk2022@gmail.com">ajiratuk2022@gmail.com</a>
+      primary: "ajiratuk2022@gmail.com",
       secondary: "president@tukajiraclub.ac.ke",
       description: "Reach out via email for general inquiries, partnership opportunities, or detailed discussions about club activities."
     },
