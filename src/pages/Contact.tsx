@@ -396,27 +396,17 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2">
               <Card className="shadow-xl overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-kenyan-green/10 to-kenyan-red/10 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-20 w-20 text-kenyan-green mx-auto mb-6" />
-                    <h3 className="text-2xl font-bold text-kenyan-black mb-4">
-                      Interactive Campus Map
-                    </h3>
-                    <p className="text-gray-600 max-w-md mx-auto mb-8 leading-relaxed">
-                      We're working on embedding a detailed interactive map of Technical University of Kenya campus 
-                      to help you locate our offices and navigate the campus easily.
-                    </p>
-                    <Button asChild className="bg-kenyan-green hover:bg-kenyan-green/80 px-6 py-3">
-                      <a>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.805141452189!2d36.8227187749657!3d-1.291258898696469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10df5a23385d%3A0x15238033c2bcdc3b!2sThe%20Technical%20University%20Of%20Kenya!5e0!3m2!1sen!2ske!4v1758291934292!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>" 
-                        {/* target="_blank" 
-                        rel="noopener noreferrer"
-                        <MapPin className="h-4 w-4 mr-2" />
-                        View on Google Maps */}
-                      </a>
-                    </Button>
-                  </div>
+                <div className="aspect-video">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.805141452189!2d36.8227187749657!3d-1.291258898696469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10df5a23385d%3A0x15238033c2bcdc3b!2sThe%20Technical%20University%20Of%20Kenya!5e0!3m2!1sen!2ske!4v1758291934292!5m2!1sen!2ske" 
+                    width="100%" 
+                    height="100%" 
+                    style={{border: 0}} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full"
+                  />
                 </div>
               </Card>
             </div>
