@@ -56,7 +56,7 @@ const Navigation = () => {
           {/* WhatsApp Link - Desktop */}
           <div className="hidden md:flex items-center">
             <a
-              href="https://wa.me/254700000000"
+              href="https://wa.me/254725813823"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 px-3 py-2 bg-kenyan-green text-white rounded-md hover:bg-kenyan-green/80 transition-colors"
