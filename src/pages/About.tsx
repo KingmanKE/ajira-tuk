@@ -129,7 +129,7 @@ const About = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <Badge className="mb-6 bg-white/20 text-white border-white animate-fade-in">
-              Est. 2015 | NRCAC Member Institution
+              Est. 2022 | NRCAC Member Institution
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in">
               About TUK AJIRA CLUB
@@ -185,7 +185,7 @@ const About = () => {
                   <div>
                     <h3 className="font-bold text-2xl text-kenyan-black mb-3">NRCAC Partnership</h3>
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      As a proud member of the National Resource Center for Academic Clubs (NRCAC), 
+                      As a proud member of the Nairobi Region Campus Ajira Club (NRCAC), 
                       we are part of Kenya's premier umbrella organization that coordinates and supports 
                       academic clubs across higher education institutions, ensuring best practices, 
                       resource sharing, and collaborative excellence in student development.
