@@ -28,8 +28,12 @@ const Navigation = () => {
               <img 
                 src={ajiraLogo} 
                 alt="TUK Ajira Digital Club Logo" 
-                className="h-12 w-auto"
+                className="h-12 w-16"
               />
+              <div className="text-white">
+                <h1 className="font-bold text-lg">TUK AJIRA CLUB</h1>
+                <p className="text-xs text-gray-300">Technical University of Kenya</p>
+              </div>
             </Link>
           </div>
 
