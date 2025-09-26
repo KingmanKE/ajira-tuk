@@ -1,5 +1,6 @@
 
 import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import ajiraLogo from '@/assets/ajira_logo.jpg';
 
 const Footer = () => {
   return (
@@ -8,10 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Club Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-kenyan-red rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">TAC</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={ajiraLogo} 
+                alt="TUK Ajira Digital Club Logo" 
+                className="h-12 w-16"
+              />
               <div>
                 <h3 className="font-bold text-lg">TUK AJIRA CLUB</h3>
                 <p className="text-sm text-gray-300">Technical University of Kenya</p>
