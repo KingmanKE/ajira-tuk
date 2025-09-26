@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src={ajiraLogo} 
                 alt="TUK Ajira Digital Club Logo" 
-                className="h-12 w-16"
+                className="h-12 w-16 rounded-md"
               />
               <div>
                 <h3 className="font-bold text-lg">TUK AJIRA CLUB</h3>
