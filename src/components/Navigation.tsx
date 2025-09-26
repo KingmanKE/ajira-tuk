@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ajiraLogo from '@/assets/ajira_logo.jpg';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,14 +24,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-kenyan-red rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">TAC</span>
-              </div>
-              <div className="text-white">
-                <h1 className="font-bold text-lg">TUK AJIRA CLUB</h1>
-                <p className="text-xs text-gray-300">Technical University of Kenya</p>
-              </div>
+            <Link to="/" className="flex items-center space-x-3">
+              <img 
+                src={ajiraLogo} 
+                alt="TUK Ajira Digital Club Logo" 
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
 
