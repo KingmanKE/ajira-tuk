@@ -3,6 +3,11 @@ import { Calendar, Building, Star, Users, Award, Target, Globe, BookOpen, Handsh
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Layout from '@/components/Layout';
+import emobilisLogo from '@/assets/emobilis_logo.jpeg';
+import ictMinistryLogo from '@/assets/ICT_ministry.jpeg';
+import kepsaLogo from '@/assets/kepsa_logo.png';
+import mastercardFoundationLogo from '@/assets/mastercard_foundation.png';
+import tukLogo from '@/assets/tuk_logo.png';
 
 const About = () => {
   const leaders = [
@@ -45,6 +50,36 @@ const About = () => {
   ];
 
   const sponsors = [
+    {
+      name: "Technical University of Kenya",
+      category: "Host Institution",
+      description: "Our home institution providing world-class technical education and training for the real world",
+      logo: tukLogo
+    },
+    {
+      name: "Mastercard Foundation",
+      category: "Platinum Partner",
+      description: "Global foundation supporting youth empowerment and financial inclusion across Africa",
+      logo: mastercardFoundationLogo
+    },
+    {
+      name: "Ministry of ICT",
+      category: "Government Partner", 
+      description: "Kenya's ICT ministry supporting digital transformation and technology innovation",
+      logo: ictMinistryLogo
+    },
+    {
+      name: "KEPSA",
+      category: "Industry Partner",
+      description: "Kenya Private Sector Alliance promoting private sector growth and youth employment",
+      logo: kepsaLogo
+    },
+    {
+      name: "eMobilis Mobile Technology Institute",
+      category: "Training Partner",
+      description: "Leading mobile technology institute providing cutting-edge digital skills training",
+      logo: emobilisLogo
+    },
     {
       name: "Safaricom PLC",
       category: "Platinum Partner",
@@ -329,8 +364,16 @@ const About = () => {
             {sponsors.map((sponsor, index) => (
               <Card key={index} className="border-2 hover:border-kenyan-red transition-all duration-300 hover:shadow-xl group">
                 <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-kenyan-green/20 to-kenyan-red/20 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Star className="h-12 w-12 text-kenyan-red" />
+                  <div className="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border-2 border-gray-100">
+                    {sponsor.logo ? (
+                      <img 
+                        src={sponsor.logo} 
+                        alt={`${sponsor.name} logo`}
+                        className="w-16 h-16 object-contain"
+                      />
+                    ) : (
+                      <Star className="h-12 w-12 text-kenyan-red" />
+                    )}
                   </div>
                   <CardTitle className="text-xl text-kenyan-black">{sponsor.name}</CardTitle>
                   <Badge className="bg-kenyan-green text-white">{sponsor.category}</Badge>
