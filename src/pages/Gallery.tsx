@@ -5,6 +5,14 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 
+// Import gallery images
+import activation01 from '@/assets/gallery/activation_01.jpg';
+import activation02 from '@/assets/gallery/activation_02.jpg';
+import dickens from '@/assets/gallery/dickens.jpg';
+import posing from '@/assets/gallery/posing.jpg';
+import training01 from '@/assets/gallery/training_01.jpg';
+import training02 from '@/assets/gallery/training_02.jpg';
+
 const Gallery = () => {
   const galleryStats = [
     { number: "500+", label: "Photos", icon: Camera },
@@ -16,6 +24,83 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
+      title: "AJIRA Digital Program Activation",
+      type: "image",
+      category: "Activation Events",
+      date: "September 2024",
+      description: "Members participating in AJIRA digital platform activation, showcasing our commitment to digital skills development and youth empowerment.",
+      metrics: { views: "3.2K", likes: "520", shares: "98" },
+      highlights: ["AJIRA Platform Training", "Digital Skills Focus", "Youth Empowerment", "Technology Integration"],
+      image: activation01
+    },
+    {
+      id: 2,
+      title: "Team Building and Community Bonding",
+      type: "image", 
+      category: "Team Activities",
+      date: "September 2024",
+      description: "Club members engaging in team building activities during AJIRA digital platform training, strengthening bonds and collaborative spirit.",
+      metrics: { views: "2.8K", likes: "445", shares: "76" },
+      highlights: ["Team Building", "Member Engagement", "Community Spirit", "Active Participation"],
+      image: activation02
+    },
+    {
+      id: 3,
+      title: "AJIRA Digital Future of Work Presentation",
+      type: "image",
+      category: "Guest Speakers",
+      date: "September 2024",
+      description: "Industry expert presenting on the future of work and digital marketing opportunities through the AJIRA digital platform.",
+      metrics: { views: "4.1K", likes: "680", shares: "134" },
+      highlights: ["Expert Speaker", "Future of Work", "Digital Marketing", "Career Guidance"],
+      image: dickens
+    },
+    {
+      id: 4,
+      title: "Members Group Photo at AJIRA Event",
+      type: "image",
+      category: "Community",
+      date: "September 2024",
+      description: "Club members posing together at the AJIRA digital platform event, showcasing our vibrant and engaged community.",
+      metrics: { views: "3.5K", likes: "590", shares: "112" },
+      highlights: ["Community Spirit", "Member Diversity", "Engagement", "Unity"],
+      image: posing
+    },
+    {
+      id: 5,
+      title: "Skills Development Training Session",
+      type: "image",
+      category: "Training Programs",
+      date: "September 2024",
+      description: "Interactive training session in our lecture hall with members actively participating in skills development workshops.",
+      metrics: { views: "2.9K", likes: "380", shares: "67" },
+      highlights: ["Skills Training", "Interactive Learning", "Knowledge Sharing", "Professional Development"],
+      image: training01
+    },
+    {
+      id: 6,  
+      title: "Capacity Building Workshop",
+      type: "image",
+      category: "Professional Development",
+      date: "September 2024",
+      description: "Comprehensive capacity building workshop session with members engaged in learning new professional skills and competencies.",
+      metrics: { views: "2.6K", likes: "425", shares: "89" },
+      highlights: ["Capacity Building", "Skill Enhancement", "Professional Growth", "Learning Environment"],
+      image: training02
+    },
+    {
+      id: 7,
+      title: "Club Promotional Video",
+      type: "video",
+      category: "Promotional Content",
+      date: "September 2024",
+      description: "Official promotional video showcasing TUK AJIRA CLUB activities, member testimonials, and our impact on student development.",
+      metrics: { views: "5.8K", likes: "892", shares: "178" },
+      highlights: ["Club Showcase", "Member Stories", "Impact Demonstration", "Professional Production"],
+      videoSrc: "/assets/videos/ajira.mp4"
+    },
+    {
+      id: 8,
       title: "Annual Career Development Summit 2024",
       type: "image",
       category: "Career Events",
@@ -25,7 +110,7 @@ const Gallery = () => {
       highlights: ["45+ Industry Speakers", "15 Workshop Sessions", "500+ Attendees", "85% Job Placement Rate"]
     },
     {
-      id: 2,
+      id: 9,
       title: "Professional Network Mixer 2024",
       type: "image", 
       category: "Networking",
@@ -35,7 +120,7 @@ const Gallery = () => {
       highlights: ["200+ Professionals", "50+ Alumni", "12 Industry Sectors", "100+ New Connections"]
     },
     {
-      id: 3,
+      id: 10,
       title: "Technical Skills Bootcamp Series",
       type: "image",
       category: "Skills Development",
@@ -45,17 +130,7 @@ const Gallery = () => {
       highlights: ["5 Technology Tracks", "Expert Instructors", "Certification Awards", "95% Completion Rate"]
     },
     {
-      id: 4,
-      title: "Club Meeting Highlights & Member Stories",
-      type: "video",
-      category: "Club Activities",
-      date: "Ongoing",
-      description: "Behind-the-scenes moments from our regular club meetings, member testimonials, and success stories.",
-      metrics: { views: "4.2K", likes: "720", shares: "156" },
-      highlights: ["Monthly Meetings", "Member Testimonials", "Success Stories", "Team Building Activities"]
-    },
-    {
-      id: 5,
+      id: 11,
       title: "Community Impact & Service Projects",
       type: "image",
       category: "Community Service",
@@ -65,47 +140,7 @@ const Gallery = () => {
       highlights: ["3 Community Projects", "100+ Volunteer Hours", "5 Partner Organizations", "Direct Community Impact"]
     },
     {
-      id: 6,  
-      title: "Industry Visit & Corporate Tours",
-      type: "image",
-      category: "Industry Exposure",
-      date: "November 2023",
-      description: "Educational visits to leading technology companies, financial institutions, and innovative startups in Nairobi.",
-      metrics: { views: "2.2K", likes: "395", shares: "78" },
-      highlights: ["8 Company Visits", "Industry Insights", "Executive Interactions", "Career Opportunities"]
-    },
-    {
-      id: 7,
-      title: "Leadership Training & Development Program",
-      type: "video",
-      category: "Leadership",
-      date: "October 2023",
-      description: "Comprehensive leadership development program featuring workshops, team challenges, and personal growth activities.",
-      metrics: { views: "3.8K", likes: "665", shares: "134" },
-      highlights: ["Leadership Workshops", "Team Challenges", "Personal Development", "Mentorship Sessions"]
-    },
-    {
-      id: 8,
-      title: "Annual Club Awards & Recognition Gala",
-      type: "image",
-      category: "Celebrations",
-      date: "September 2023",
-      description: "Prestigious annual celebration recognizing outstanding achievements, celebrating milestones, and honoring our community.",
-      metrics: { views: "5.0K", likes: "890", shares: "200" },
-      highlights: ["Excellence Awards", "Achievement Recognition", "Community Celebration", "Alumni Reunion"]
-    },
-    {
-      id: 9,
-      title: "Innovation Challenge & Startup Showcase",
-      type: "video",
-      category: "Innovation",
-      date: "August 2023",
-      description: "Student-led innovation challenge featuring creative solutions, startup pitches, and entrepreneurship development.",
-      metrics: { views: "2.8K", likes: "485", shares: "92" },
-      highlights: ["15 Student Startups", "Innovation Challenges", "Investor Panels", "Entrepreneurship Focus"]
-    },
-    {
-      id: 10,
+      id: 12,
       title: "Alumni Success Stories & Testimonials",
       type: "video",
       category: "Alumni Network",
@@ -113,36 +148,17 @@ const Gallery = () => {
       description: "Inspiring stories from our successful alumni sharing their career journeys and the impact of club membership.",
       metrics: { views: "3.5K", likes: "620", shares: "118" },
       highlights: ["Success Stories", "Career Journeys", "Impact Testimonials", "Inspirational Content"]
-    },
-    {
-      id: 11,
-      title: "International Partnership Summit",
-      type: "image",
-      category: "Global Connections",
-      date: "June 2023",
-      description: "Historic summit establishing international partnerships and global opportunities for our members.",
-      metrics: { views: "1.9K", likes: "340", shares: "65" },
-      highlights: ["International Partners", "Global Opportunities", "Cultural Exchange", "Partnership Agreements"]
-    },
-    {
-      id: 12,
-      title: "Skills Certification Award Ceremony",
-      type: "image",
-      category: "Achievements",
-      date: "May 2023",
-      description: "Celebrating our members' achievements in various professional certification programs and skill development initiatives.",
-      metrics: { views: "2.4K", likes: "425", shares: "87" },
-      highlights: ["Professional Certifications", "Skill Recognition", "Achievement Celebration", "Personal Growth"]
     }
   ];
 
   const categories = [
     { name: "All", count: galleryItems.length, active: true },
-    { name: "Career Events", count: 3, active: false },
-    { name: "Skills Development", count: 2, active: false },
-    { name: "Networking", count: 2, active: false },
-    { name: "Innovation", count: 1, active: false },
-    { name: "Community Service", count: 1, active: false }
+    { name: "Activation Events", count: 1, active: false },
+    { name: "Training Programs", count: 2, active: false },
+    { name: "Guest Speakers", count: 1, active: false },
+    { name: "Team Activities", count: 1, active: false },
+    { name: "Professional Development", count: 1, active: false },
+    { name: "Career Events", count: 1, active: false }
   ];
 
   return (
@@ -246,7 +262,24 @@ const Gallery = () => {
               <Card key={item.id} className="group hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-transparent hover:border-kenyan-green/30 overflow-hidden">
                 <div className="relative">
                   <div className="relative aspect-video bg-gradient-to-br from-kenyan-red/10 to-kenyan-green/10 flex items-center justify-center overflow-hidden">
-                    {item.type === 'image' ? (
+                    {item.image ? (
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    ) : item.videoSrc ? (
+                      <div className="relative w-full h-full bg-black flex items-center justify-center">
+                        <Play className="h-20 w-20 text-white/80 group-hover:scale-125 transition-transform duration-500" />
+                        <video 
+                          className="absolute inset-0 w-full h-full object-cover opacity-50"
+                          muted
+                          loop
+                        >
+                          <source src={item.videoSrc} type="video/mp4" />
+                        </video>
+                      </div>
+                    ) : item.type === 'image' ? (
                       <ImageIcon className="h-20 w-20 text-kenyan-green/50 group-hover:scale-125 transition-transform duration-500" />
                     ) : (
                       <Play className="h-20 w-20 text-kenyan-red/50 group-hover:scale-125 transition-transform duration-500" />

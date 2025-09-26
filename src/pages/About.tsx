@@ -79,36 +79,6 @@ const About = () => {
       category: "Training Partner",
       description: "Leading mobile technology institute providing cutting-edge digital skills training",
       logo: emobilisLogo
-    },
-    {
-      name: "Safaricom PLC",
-      category: "Platinum Partner",
-      description: "Leading telecommunications provider supporting digital innovation and career development programs"
-    },
-    {
-      name: "Kenya Commercial Bank",
-      category: "Gold Partner", 
-      description: "Premier financial institution providing financial literacy training and internship opportunities"
-    },
-    {
-      name: "Microsoft East Africa",
-      category: "Technology Partner",
-      description: "Global technology leader offering certification programs and cloud computing training"
-    },
-    {
-      name: "Equity Bank Kenya",
-      category: "Gold Partner",
-      description: "Major financial services provider supporting entrepreneurship and financial education initiatives"
-    },
-    {
-      name: "IBM Kenya",
-      category: "Innovation Partner",
-      description: "Technology giant providing AI and data science training opportunities for members"
-    },
-    {
-      name: "Nairobi Securities Exchange",
-      category: "Industry Partner",
-      description: "Capital markets regulator offering financial markets education and career opportunities"
     }
   ];
 
@@ -364,16 +334,12 @@ const About = () => {
             {sponsors.map((sponsor, index) => (
               <Card key={index} className="border-2 hover:border-kenyan-red transition-all duration-300 hover:shadow-xl group">
                 <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border-2 border-gray-100">
-                    {sponsor.logo ? (
-                      <img 
-                        src={sponsor.logo} 
-                        alt={`${sponsor.name} logo`}
-                        className="w-16 h-16 object-contain"
-                      />
-                    ) : (
-                      <Star className="h-12 w-12 text-kenyan-red" />
-                    )}
+                  <div className="w-full h-32 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center p-4 border-2 border-gray-100 group-hover:border-kenyan-green/30 transition-colors duration-300">
+                    <img 
+                      src={sponsor.logo} 
+                      alt={`${sponsor.name} logo`}
+                      className="max-w-full max-h-full object-contain"
+                    />
                   </div>
                   <CardTitle className="text-xl text-kenyan-black">{sponsor.name}</CardTitle>
                   <Badge className="bg-kenyan-green text-white">{sponsor.category}</Badge>
